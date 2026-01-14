@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    /*background-color: #9bc5d5c7;*/
+}
+
+/* Header Hero Section*/
+.hero-section {
+    min-height: 20vh;
+    background-image: url("images/Background2.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(29, 106, 32, 0.35);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Style*/
+.card{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body .btn{
+  margin-top: auto;
+}
+
+/* Read More Button*/
+.read-more-btn {
+  background-color: #3661a1;   
+  border-color: #040d1b;
+}
+
+.read-more-btn:hover {
+  background-color: #08234d;   
+  border-color: #084298;
+}
+
+header img {
+    border: 5px solid white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+header p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d4d4d4;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid #eaeaea;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
